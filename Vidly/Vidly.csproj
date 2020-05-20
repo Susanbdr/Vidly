@@ -178,10 +178,73 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005200244236_InitialModel.cs" />
+    <Compile Include="Migrations\202005200244236_InitialModel.Designer.cs">
+      <DependentUpon>202005200244236_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005200251587_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\202005200251587_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>202005200251587_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005200257162_AddMemberShipType.cs" />
+    <Compile Include="Migrations\202005200257162_AddMemberShipType.Designer.cs">
+      <DependentUpon>202005200257162_AddMemberShipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005200259210_PopulateMemberShipTypes.cs" />
+    <Compile Include="Migrations\202005200259210_PopulateMemberShipTypes.Designer.cs">
+      <DependentUpon>202005200259210_PopulateMemberShipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005200305471_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\202005200305471_ApplyAnnotationsToCustomerName.Designer.cs">
+      <DependentUpon>202005200305471_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005200327544_AddMembershipTypes.cs" />
+    <Compile Include="Migrations\202005200327544_AddMembershipTypes.Designer.cs">
+      <DependentUpon>202005200327544_AddMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005200339022_AddNamesToMembership.cs" />
+    <Compile Include="Migrations\202005200339022_AddNamesToMembership.Designer.cs">
+      <DependentUpon>202005200339022_AddNamesToMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005200342074_ChangedTheName.cs" />
+    <Compile Include="Migrations\202005200342074_ChangedTheName.Designer.cs">
+      <DependentUpon>202005200342074_ChangedTheName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005200348396_AddMembershiptypeNames.cs" />
+    <Compile Include="Migrations\202005200348396_AddMembershiptypeNames.Designer.cs">
+      <DependentUpon>202005200348396_AddMembershiptypeNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005200352394_AddDateTime.cs" />
+    <Compile Include="Migrations\202005200352394_AddDateTime.Designer.cs">
+      <DependentUpon>202005200352394_AddDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005200404140_AddMoviesTable.cs" />
+    <Compile Include="Migrations\202005200404140_AddMoviesTable.Designer.cs">
+      <DependentUpon>202005200404140_AddMoviesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005200413028_AddGenre.cs" />
+    <Compile Include="Migrations\202005200413028_AddGenre.Designer.cs">
+      <DependentUpon>202005200413028_AddGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005200417347_AddMoviesProperties.cs" />
+    <Compile Include="Migrations\202005200417347_AddMoviesProperties.Designer.cs">
+      <DependentUpon>202005200417347_AddMoviesProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005200422485_Genre.cs" />
+    <Compile Include="Migrations\202005200422485_Genre.Designer.cs">
+      <DependentUpon>202005200422485_Genre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005200427350_MakeChangesToMoviesModel.cs" />
+    <Compile Include="Migrations\202005200427350_MakeChangesToMoviesModel.Designer.cs">
+      <DependentUpon>202005200427350_MakeChangesToMoviesModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MemberShipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -249,6 +312,7 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Random.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -265,6 +329,53 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202005200244236_InitialModel.resx">
+      <DependentUpon>202005200244236_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005200251587_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>202005200251587_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005200257162_AddMemberShipType.resx">
+      <DependentUpon>202005200257162_AddMemberShipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005200259210_PopulateMemberShipTypes.resx">
+      <DependentUpon>202005200259210_PopulateMemberShipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005200305471_ApplyAnnotationsToCustomerName.resx">
+      <DependentUpon>202005200305471_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005200327544_AddMembershipTypes.resx">
+      <DependentUpon>202005200327544_AddMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005200339022_AddNamesToMembership.resx">
+      <DependentUpon>202005200339022_AddNamesToMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005200342074_ChangedTheName.resx">
+      <DependentUpon>202005200342074_ChangedTheName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005200348396_AddMembershiptypeNames.resx">
+      <DependentUpon>202005200348396_AddMembershiptypeNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005200352394_AddDateTime.resx">
+      <DependentUpon>202005200352394_AddDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005200404140_AddMoviesTable.resx">
+      <DependentUpon>202005200404140_AddMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005200413028_AddGenre.resx">
+      <DependentUpon>202005200413028_AddGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005200417347_AddMoviesProperties.resx">
+      <DependentUpon>202005200417347_AddMoviesProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005200422485_Genre.resx">
+      <DependentUpon>202005200422485_Genre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005200427350_MakeChangesToMoviesModel.resx">
+      <DependentUpon>202005200427350_MakeChangesToMoviesModel.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
