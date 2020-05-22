@@ -6,6 +6,9 @@
 
 <h2>Customer</h2>
 
+<p>
+    @Html.ActionLink("NEW CUSTOMER", "New", "Customers", null, new { @class = "btn btn-primary" })
+</p>
 @if (!Model.Any())
 {
     <text>There are no customers!</text>
@@ -16,19 +19,19 @@ else
 {
     <table class="table table-bordered table-hover">
         <thead>
-        <tr>
-            <th>Customer</th>
-            <th>Membership Type</th>
-        </tr>
+            <tr>
+                <th>Customer</th>
+                <th>Membership Type</th>
+            </tr>
         </thead>
         <tbody>
-        @foreach (var customer in Model)
-        {
-            <tr>
-                <td>@Html.ActionLink(customer.Name, "Edit", "Customers", new { id = customer.Id }, null)</td>
-                <td>@customer.MemberShipType.Name</td>
-            </tr>
-        }
+            @foreach (var customer in Model)
+            {
+                <tr>
+                    <td>@Html.ActionLink(customer.Name, "Edit", "Customers", new { id = customer.Id }, null)</td>
+                    <td>@customer.MemberShipType.Name</td>
+                </tr>
+            }
         </tbody>
     </table>
 }
