@@ -11,7 +11,7 @@ namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
-        private ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
         public MoviesController()
         {
@@ -60,7 +60,6 @@ namespace Vidly.Controllers
             return View(viewModel);
 
         }
-
        
         public ViewResult New()
         {
