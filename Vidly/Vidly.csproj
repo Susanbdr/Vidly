@@ -262,8 +262,21 @@
     <Compile Include="Migrations\202005220237177_MakeNameInMovieRequired.Designer.cs">
       <DependentUpon>202005220237177_MakeNameInMovieRequired.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005262111519_SeedUsers.cs" />
+    <Compile Include="Migrations\202005262111519_SeedUsers.Designer.cs">
+      <DependentUpon>202005262111519_SeedUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005262137035_AddDrivingLicenseToApplicationUser.cs" />
+    <Compile Include="Migrations\202005262137035_AddDrivingLicenseToApplicationUser.Designer.cs">
+      <DependentUpon>202005262137035_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005270201222_AddPhoneToApplicationUser.cs" />
+    <Compile Include="Migrations\202005270201222_AddPhoneToApplicationUser.Designer.cs">
+      <DependentUpon>202005270201222_AddPhoneToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -271,11 +284,14 @@
     <Compile Include="Models\MemberShipType.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\ExternalLoginConfirmationViewModel.cs" />
     <Compile Include="ViewModels\MovieFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
+    <Compile Include="ViewModels\RegisterViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-lumen.css" />
@@ -513,10 +529,11 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Random.cshtml" />
-    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\List.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Customers\CustomerForm.cshtml" />
     <Content Include="Views\Movies\MovieForm.cshtml" />
+    <Content Include="Views\Movies\ReadOnlyList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -582,6 +599,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005220237177_MakeNameInMovieRequired.resx">
       <DependentUpon>202005220237177_MakeNameInMovieRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005262111519_SeedUsers.resx">
+      <DependentUpon>202005262111519_SeedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005262137035_AddDrivingLicenseToApplicationUser.resx">
+      <DependentUpon>202005262137035_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005270201222_AddPhoneToApplicationUser.resx">
+      <DependentUpon>202005270201222_AddPhoneToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
